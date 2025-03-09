@@ -1,6 +1,6 @@
 +++
 title = "Becoming a Contributor"
-date = "2025-04-09"
+date = "2025-03-09"
 +++
 
 > Would you tell me, please, which way I ought to go from here? </br>

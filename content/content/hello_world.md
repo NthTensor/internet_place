@@ -1,6 +1,6 @@
 +++
 title = "Hello World"
-date = "2025-04-08"
+date = "2025-03-08"
 +++
 
 > Look at that subtle off-white coloring. The tasteful thickness of it.
