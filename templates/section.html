@@ -2,10 +2,28 @@
 
 {% block content %}
 <h2>{{ section.title }}</h2>
-<hr/>
-<ul>
-  {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-  {% endfor %}
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>
+        Article
+      </th>
+      <th>
+        Date
+      </th>
+    <tr>
+  </thead>
+  <tbody>
+    {% for page in section.pages %}
+    <tr>
+      <td>
+        <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+      </td>
+      <td>
+        {{ page.date }}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 {% endblock content %}

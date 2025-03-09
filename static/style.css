@@ -56,6 +56,45 @@ blockquote {
 }
 
 /* -----------------------------------------------------------------------------
+ * Tables
+ */
+
+table {
+    width: 100%;
+    text-align: left;
+
+    font-size: 14px;
+    font-family: "Space Mono", monospace;
+    font-weight: 400; 
+    font-style: normal;
+    
+    border-collapse: collapse;
+    border: 1px solid var(--halftone);
+    border-top: 2px dotted var(--halftone);
+    border-left: 5px solid var(--halftone);
+    box-shadow: 2px 2px var(--background);
+
+    margin-bottom: 1rem;
+}
+
+th {
+    overflow: hidden;
+    padding: .2rem .4rem 0;
+
+    border-bottom: 2px solid var(--halftone);
+    border-left: 1px solid var(--halftone);
+}
+
+td {
+    overflow: hidden;
+    height: 1.5rem;
+    padding: .2rem .4rem 0;
+
+    border-bottom: 1px solid var(--halftone);
+    border-right: 1px solid var(--halftone);
+}
+
+/* -----------------------------------------------------------------------------
  * The Header
  */
 
