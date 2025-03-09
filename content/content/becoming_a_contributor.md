@@ -3,6 +3,9 @@ title = "Becoming a Contributor"
 date = "2025-04-09"
 +++
 
+> Would you tell me, please, which way I ought to go from here? </br>
+> That depends a good deal on where you want to get to.
+
 Any healthy community project attracts a crowd of people who want to help out, but don't know how. The [Bevy Game Engine][1] gets a lot of these people, which is great. I am an infrequent contributor to bevy and am somewhat active in community discussions, and so I'm occasionally in a position to offer advice to people caught in this situation. To make things easier, I thought I'd collect this advice into an article so I can easily link to it.
 
 If you did get linked here from bevy you should also take a look at the [Contributing Guide][2] (which, incidentally, I helped write). If not, the advice I'm going to offer should be generally applicable to most open source projects.
@@ -21,6 +24,7 @@ Starting small is the most obvious approach, and it's a good one. Most projects 
 The main thing you will get out of chores (apart from an exercise in self-discipline) is experience with the tooling and process in a low-stakes environment. If you're new to the language, or for example `git`, chores are the way to level up your skills until you reach basic proficiency. If you already have basic technical proficiency, it will still teach you about the social conventions and process particular to the community you are joining.
 
 ## Study The Code
+
 If the previous section seemed obvious, this one may not: You should get out a pen and paper (or whatever note-taking app you prefer) and read the entire codebase top-to-bottom like a "Choose Your Own Adventure" novel. Pick an an example or some well-isolated top level logic, and open it in an editor with *go-to-definition* support. This is the "top" of your call-stack; from there you should trace down all the definitions, reading and annotating as you go, until you reach the "bottom" and your code hits the underplaying API calls. Your goal here is to produce an architectural overview describing all the layers of abstraction you encounter and how they fit together. If you stick at it, you should end up with something like [this][3].
 
 I sense some of you may have some concerns...

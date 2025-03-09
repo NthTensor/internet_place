@@ -2,10 +2,16 @@
 title = "Contact"
 +++
 
+> Call me (call me) on the line </BR>
+> Call me, call me any-anytime
+
+Reaching me can be somewhat difficult, but if you want to try your luck here's some ways to start:
+
 | Platform | Handle                         |
 |----------|--------------------------------|
 | email    | miles.silberlingcook@gmail.com |
 | github   | NthTensor                      |
+| discord  | nth7023                        |
 
-You can also frequently find me at the Boston rust meetup. I am not currently looking for work.
+I'm also frequently at the Boston rust meetup.
 
