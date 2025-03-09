@@ -37,6 +37,25 @@ body {
 }
 
 /* -----------------------------------------------------------------------------
+ * Markdown Format Miscelany
+ */
+
+a {
+    color: var(--ink);
+}
+
+code {
+    font-size: 14px;
+    font-family: "Space Mono", monospace;
+    font-weight: 400; 
+    font-style: normal;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+/* -----------------------------------------------------------------------------
  * The Header
  */
 
@@ -52,19 +71,9 @@ header h1 {
     font-style: italic;
 }
 
-header ul {
-    float: right;
-    padding-left: 0;
+header a {
+    text-decoration: none;
 }
-
-header li {
-    display: inline;
-    list-style: none;
-}
-
-/* -----------------------------------------------------------------------------
- * Links
- */
 
 nav a {
     height: 1.75rem;
@@ -75,15 +84,23 @@ nav a {
     font-weight: 400; 
     font-style: normal;
 
-    color: var(--ink);
     border: 1px solid var(--ink);
-    text-decoration: none;
 }
 
 nav a:hover {
     color: var(--page);
     background: var(--ink);
     border: 1px solid var(--ink);
+}
+
+header ul {
+    float: right;
+    padding-left: 0;
+}
+
+header li {
+    display: inline;
+    list-style: none;
 }
 
 /* -----------------------------------------------------------------------------
@@ -186,19 +203,4 @@ footer {
         --frame:  black;
         --shadow: black;
     }
-}
-
-/* -----------------------------------------------------------------------------
- * Markdown Format Miscelany
- */
-
-code {
-    font-size: 14px;
-    font-family: "Space Mono", monospace;
-    font-weight: 400; 
-    font-style: normal;
-}
-
-blockquote {
-    font-style: italic;
 }
