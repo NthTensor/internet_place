@@ -1,0 +1,204 @@
+@charset "UTF-8";
+
+:root {
+    --background: rgb(231, 231, 231);
+    --page: rgb(252, 252, 252);
+    --ink: rgb(23, 23, 23);
+    --halftone: rgb(210, 210, 210);
+    
+    --frame: rgb(23, 23, 23);
+    --shadow: rgb(160, 160, 160);
+}
+
+html {
+    font-size: 16px;
+    background: var(--background);
+}
+
+body {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: .5rem 1rem .25rem;
+    border: 1px solid var(--frame);
+    box-shadow: 2px 2px var(--shadow);
+    
+    max-width: 675px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-family: "Ysabeau", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.25rem;
+
+    color: var(--ink);
+    background: var(--page);
+}
+
+/* -----------------------------------------------------------------------------
+ * The Header
+ */
+
+header {
+    display: block;
+    height: 5rem;
+}
+
+header h1 {
+    float: left;
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+header ul {
+    float: right;
+    padding-left: 0;
+}
+
+header li {
+    display: inline;
+    list-style: none;
+}
+
+/* -----------------------------------------------------------------------------
+ * Links
+ */
+
+nav a {
+    height: 1.75rem;
+    padding: .1rem .5rem 0;
+        
+    font-size: 14px;
+    font-family: "Space Mono", monospace;
+    font-weight: 400; 
+    font-style: normal;
+
+    color: var(--ink);
+    border: 1px solid var(--ink);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--page);
+    background: var(--ink);
+    border: 1px solid var(--ink);
+}
+
+/* -----------------------------------------------------------------------------
+ * Headings & Rules
+ */
+    
+h1, h2, h3, h4, h5, h6 {
+    display: inline-block;
+    font-family: "Vollkorn", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 0.5rem;
+}
+
+hr {
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid var(--ink);
+}
+
+/* -----------------------------------------------------------------------------
+ * The Footer
+ */
+
+footer {
+    text-align: center;
+    
+    font-size: 10px;
+    font-family: "Space Mono", monospace;
+    font-weight: 400; 
+    font-style: normal;
+    line-height: 1.1;
+
+    color: var(--halftone);
+}
+
+/* -----------------------------------------------------------------------------
+ * Error Box
+ */
+
+.error {
+    width: 200px;
+    height: 100px;
+
+    display: grid;
+    align-items: center;
+
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    text-align: center;
+    
+    font-size: 16px;
+    font-family: "Space Mono", monospace;
+    font-weight: 400; 
+    font-style: normal;
+
+    color: rgb(252, 252, 252);
+    border: 1px solid rgb(252, 252, 252);
+    outline: 5px solid oklch(0.514 0.222 16.935);
+    background: oklch(0.514 0.222 16.935);
+}
+
+/* -----------------------------------------------------------------------------
+ * Media Display Customizations
+ */
+
+/* In print media and small devices, use the full screen instead of a inset page element. */
+@media print, (width <= 700px) {
+    html {
+        background: var(--page);
+    }
+    
+    body {
+            margin-top: 0;
+            margin-bottom: 0;
+            border: none !important;
+            box-shadow: none;
+    }
+}
+
+/* Hide the nav buttons for print media. */
+@media print {
+    nav {
+        display: none;
+    }
+}
+
+/* -----------------------------------------------------------------------------
+ * Dark Theme
+ */
+
+@media (prefers-color-scheme: dark) {
+    
+    :root {
+        --background: rgb(26, 26, 26);
+        --page: rgb(38, 38, 38);
+        --ink: rgb(229, 229, 229);
+        --halftone: rgb(80, 80, 80);
+        --frame:  black;
+        --shadow: black;
+    }
+}
+
+/* -----------------------------------------------------------------------------
+ * Markdown Format Miscelany
+ */
+
+code {
+    font-size: 14px;
+    font-family: "Space Mono", monospace;
+    font-weight: 400; 
+    font-style: normal;
+}
+
+blockquote {
+    font-style: italic;
+}

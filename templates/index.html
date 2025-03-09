@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% set content_section = get_section(path="content/_index.md") %}
+{% for page in content_section.pages %}
+<h2>
+  {{ page.title }}
+</h2>
+{% if page.date %}
+<h3>
+  - {{ page.date }}
+</h3>
+{% endif %}
+<hr/>
+{{ page.content | safe }}
+{% endfor %}
+{% endblock content %}

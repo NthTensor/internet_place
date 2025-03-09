@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-AU-Compatible" content="ie=edge">
+    <title>Internet Place</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Vollkorn:ital,wght@0,400..900;1,400..900&family=Ysabeau:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{{ get_url(path="style.css") }}">
+  </head>
+  <body>
+
+    <header>
+      <h1>Internet Place</h1>
+      <nav>
+        <ul>
+          <li><a href="/context">Context</a></li>
+          <li><a href="/content">Content</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+
+    <footer>
+      <hr/>
+      <p>
+        COPYRIGHT 2025, MILES SILBERLING-COOK <br/> CONTENT PUBLISHED UNDER CC-BY-SA <br/> SOURCE-CODE PUBLISHED UNDER MIT & APACHE-2.0 <br/> PRODUCED IN BOSTON MASSACHUSETTS, USA
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% set content_section = get_section(path="content/_index.md") %}
+{% set page = content_section.pages | first %}
+
+{% block content %}
+<h2>Http Error</h2>
+<hr/>
+<div class="error">ERROR 404</br>Page Not Found</div>
+{% endblock content %}
