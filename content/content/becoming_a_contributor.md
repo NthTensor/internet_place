@@ -1,18 +1,16 @@
 +++
-title = "Becoming a Contributor"
-date = "2025-03-09"
+title = "Become a Regular Contributor"
+date = "2025-03-10"
 +++
 
 > Would you tell me, please, which way I ought to go from here? </br>
 > That depends a good deal on where you want to get to.
 
-Any healthy community project attracts a crowd of people who want to help out, but don't know how. The [Bevy Game Engine][1] gets a lot of these people, which is great. I am an infrequent contributor to Bevy and am somewhat active in community discussions, and so I'm occasionally in a position to offer advice to people caught in this situation. To make things easier, I thought I'd collect this advice into an article so I can easily link to it.
+Any healthy community project attracts a crowd of people who want to help out in a regular sustained way, but don't know where to begin. The [Bevy Game Engine][1] gets a lot of these people, which is great. I am a regular contributor to Bevy and am somewhat active in community discussions, and so I'm occasionally in a position to offer advice to people caught in this situation. To make things easier, I thought I'd collect this advice into an article so I can easily link to it.
 
 If you did get linked here from Bevy, you should also take a look at the [Contributing Guide][2] (which, incidentally, I helped write). If not, the advice I'm going to offer should be generally applicable to most open-source projects.
 
-This advice is aimed mostly at junior devs - especially those new to open source. If you're more experienced, the advice probably won't be very interesting.
-
-Now, when you're first starting out, I recommend doing four things:
+This advice is aimed mostly at junior devs - especially those new to open source. If you're more experienced, what I have to say probably won't be very interesting to you. Whoever you are, if there's an open-source project you just *know* you'd love to become closely involved with but don't know where to start, I recommend doing these four things:
 1. Offer to do tiny, longstanding chores.
 2. Study the code and take notes.
 3. Ask questions in code reviews.
@@ -52,19 +50,23 @@ Most of the time, the author will be happy to explain, but sometimes you will ac
 
 ## Attempt Ambitious Projects
 
-Many contributors seem to tend naturally to this particular approach, and I can hardly blame them. Ambition is a great motivator, and it seems to me to be selected for in the population of people who decide they want to "get good" at open source. My advice here is to temper your expectations, but to let yourself be ambitious nonetheless.
+Many new contributors seem to tend naturally to ambitious large-scale improvements, and I can hardly blame them. Ambition is a great motivator, and to some degree is probably selected for in the population of people who are willing to throw themselves at a new project knowing basically nothing. My advice here is to temper your expectations, but to let yourself be ambitious nonetheless.
 
-Once you know the code well enough to have opinions about improving it, follow those feelings. Follow them, with the knowledge that your first few big projects are probably not going to make it to completion. Part of becoming a seasoned contributor is, honestly, fighting with big changes and finding out they have hands. Do not be discouraged, either by feeling you need to give up on a branch, or by the idea that you might not be ready because failure is possible.
+If you're doing the other three things on this list, you're probably going to start developing opinions about and ideas for improving your project's codebase. Follow those feelings... follow them, with the knowledge that your first few big projects are probably not going to make it to completion. Part of becoming a seasoned contributor is, honestly, fighting with big changes, struggling, figuring out why no one else has solved this yet, and walking away. Don't let yourself become discouraged by failure - having to give up on a branch, or deciding you took the wrong approach and needing to start over, or declaring git bankruptcy because your history is out of control - these are all perfectly normal. If worst comes to worst, you can always shelve your idea and come back to it when you've got more experience.
 
-## Summary
+I don't want to give you the impression that I'm expecting you to fail every time you pick up a big task. There will be successes too: For me, I'd say about one in every five of my early attempts at big contributions ended up with a merged PR. A 20% success rate is not nothing. For the project that merges them, the unlikely successes are golden eggs. Ambitious PRs are, by definition, important. When someone new steps in and resolves an important bug or feature, that is the best-case scenario for the project: increasing momentum, freeing up other resources down the line, moving the project closer to its goals. It's not just that the important thing got done, it's that none of the other existing contributors had to take time away from their other work to do it.
 
-Eventually you will find:
+## Now What
+
+If I know my audience, I suspect all of you will be doing some of these already, and some of you will be doing all of them. If you're only doing (1), (2), or (3), consider balancing out your approach with the other two: it can keep things fresh and interesting. In my experience, (4) tends to develop more from the other three than a conscious choice. 
+
+Eventually, you will find:
 1. That the chores are no longer a good use of your time.
-2. That you need to read up on the code less and less
+2. That you need to read up on the code less and less.
 3. That your questions reveal more and more issues.
-4. That your ambitious projects actually succeed.
+4. That your ambitious projects frequently end in success.
 
-Congratulations, you're now a senior contributor.
+Congratulations, you've become a regular contributor.
 
 [1]: https://bevyengine.org
 [2]: https://bevyengine.org/learn/contribute/introduction/
