@@ -186,10 +186,7 @@ footer {
 
     display: grid;
     align-items: center;
-
     margin: auto;
-    margin-top: 10rem;
-    margin-bottom: 10rem;
     text-align: center;
     
     font-size: 16px;
@@ -199,8 +196,22 @@ footer {
 
     color: rgb(252, 252, 252);
     border: 1px solid rgb(252, 252, 252);
-    outline: 5px solid oklch(0.514 0.222 16.935);
-    background: oklch(0.514 0.222 16.935);
+}
+
+.error-container {
+    width: 220px;
+    height: 120px;
+
+    display: grid;
+    align-items: center;
+
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+    border: 1px solid var(--frame);
+    background: color(display-p3 0.745 0 0.161);
+    box-shadow: 2px 2px var(--background);
 }
 
 /* -----------------------------------------------------------------------------
@@ -214,10 +225,11 @@ footer {
     }
     
     body {
-            margin-top: 0;
-            margin-bottom: 0;
-            border: none !important;
-            box-shadow: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        border: none !important;
+        box-shadow: none;
+        height: 100%;    
     }
 }
 
